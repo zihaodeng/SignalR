@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "OpenDoor";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="~/Scripts/utils.js" type="text/javascript"></script>
+<script src="~/Scripts/sc.websocket.js" type="text/javascript"></script>
+<script src="~/Scripts/sdk/dependencies/socket.io.js" type="text/javascript"></script>
+<script src="~/Scripts/sdk/dependencies/adapter.js" type="text/javascript"></script>
+<script src="~/Scripts/sdk/woogeen.sdk.js" type="text/javascript"></script>
+<script src="~/Scripts/jquery.cookie.js" type="text/javascript"></script>
+<script src="~/Scripts/json2.js"></script>
+<script src="~/Scripts/jquery.signalR-2.4.0.js"></script>
+<script src="~/SignalR/hubs"></script>
+
+
+<script type="text/javascript">
+    $(function () {
+        var systemHub = $.connection.systemHub;
+
+        //后端调用前段,即后端推消息给前端
+        systemHub.client.serverSendClient = function (message) {
+            alert("serverSendClient=" + message);
+        };
+
+        //开始连接
+        $.connection.hub.start().done(function () {
+            //客户端发送信息到服务端
+            systemHub.server.send($.connection.hub.id);
+            alert("connection.hub.id=" + $.connection.hub.id);
+        });
+    });
+</script>
+<h2>OpenDoor</h2>
+
+<p id="main">
+    开门
+</p>
+<div id="loginDiv" style="display: none;">
+    <input id="doornumber" type="text" value="" />
+    <input id="server" type="text" value="" /><input id="ice" type="text" value="" />
+    <input id="user" type="text" value="" /><input id="pwd" type="text" value="" />
+    <input id="uid" type="text" value="" /><input id="target-uid" type="text" value="" />
+    <input id="result" type="text" value="" />
+</div>
