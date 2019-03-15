@@ -1,0 +1,79 @@
+﻿.btn-l
+{
+	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.btn-s
+{
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.btn-page
+{
+	background-color: #5bb85d;
+	color: White;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	border-bottom-right-radius: 1px;
+	border-bottom-left-radius: 1px;
+	border: 0px solid #e3e2e2;
+	text-align:center;
+}
+.successBtn
+{
+	background-color: #5bb85d;
+	color: White;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 0px solid #e3e2e2;
+}
+.warmBtn
+{
+	background-color: #dc524f;
+	color: White;
+	border: 0px solid #e3e2e2;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.successBtnHalf
+{
+	background-color: #5bb85d;
+	color: White;
+	border-radius: 15px 5px;
+}
+.warmBtnHalf
+{
+	background-color: #dc524f;
+	color: White;
+	border-radius: 15px 5px;
+}
+.menu
+{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+}
+.pagefooter
+{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	text-align:center;
+	width:100%;
+}
+
+.tables
+{
+	background-color:#fff;
+	padding-top:4px;
+	padding-left:4px;
+	padding-right:4px;
+}
